@@ -14,7 +14,7 @@ elseif(OS_LINUX)
 elseif(OS_MACOS)
   set(CEF_SDK_PLATFORM "macos")
 else()
-  message(FATAL_ERROR "Unsupported Operating System")
+  message(FATAL_ERROR "Unsupported Operating System: '${OS_WINDOWS}'")
 endif()
 
 if(PROJECT_ARCH STREQUAL "x86_64")
